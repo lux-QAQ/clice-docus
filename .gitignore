@@ -1,0 +1,21 @@
+# vitepress
+src/.vitepress/cache/*
+src/.vitepress/dist/*
+
+# Node.js
+node_modules/
+
+# system
+.DS_Store
+Thumbs.db
+
+# log
+*.log
+npm-debug.log*
+
+# env
+.env
+.env.local
+
+# history
+.history/*
