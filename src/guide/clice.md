@@ -66,5 +66,3 @@ graph TB
 
 ## clice Makes Its Grand Entrance
 Now that you understand clice, let's navigate to the directory guide to check out the tutorials and proceed with installation...configuration...
-
-[Directory Navigation](./start-install.md)
