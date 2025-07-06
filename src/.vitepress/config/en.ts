@@ -9,7 +9,7 @@ export const en = defineConfig({
         sidebar: sidebarGuide(),
 
         editLink: {
-            pattern: 'https://github.com/your-repo/edit/main/src/:path', // 请替换为您的仓库链接
+            pattern: 'https://github.com/your-repo/edit/main/src/:path', // 替换为文档仓库的地址
             text: 'Edit this page on GitHub'
         },
 
@@ -88,8 +88,33 @@ function sidebarGuide(): DefaultTheme.Sidebar {
             base: '/use',
             collapsed: true,
             items: [
-                { text: 'vscode', link: '/vscode' },
+                { text: 'VScode', link: '/vscode' },
                 //{ text: 'Community Resources', link: '/community' }
+            ]
+        },
+        {
+            text: 'Design',
+            base: '/design',
+            collapsed: true,
+            items: [
+                { text: 'Architecture', link: '/architecture' },
+                { text: 'Clangd', link: '/clangd' },
+                { text: 'Dependent name', link: '/dependent-name' },
+                { text: 'Design', link: '/design' },
+                { text: 'Index', link: '/index' },
+                { text: 'Protocol', link: '/protocol' },
+            ]
+        },
+        {
+            text: 'Feature',
+            base: '/feature',
+            collapsed: true,
+            items: [
+                { text: 'Document Symbol', link: '/document-symbol' },
+                { text: 'Folding Range', link: '/folding-range' },
+                { text: 'Inlay Hint', link: '/inlay-hint' },
+                { text: 'Semantic Tokens', link: '/semantic-tokens' },
+
             ]
         },
         {
@@ -113,27 +138,27 @@ function sidebarGuide(): DefaultTheme.Sidebar {
                            } */
             ]
         },
-        {
-            text: 'Protocol',
-            base: '/onebot',
-            collapsed: true,
-            items: [
-                { text: 'Protocol Overview', link: '/index' },
-                { text: 'Network Communication', link: '/network' },
-                { text: 'Basic Event Structure', link: '/basic_event' },
-                { text: 'Event Field Details', link: '/event' },
-                { text: 'Basic API Interface', link: '/api' },
-                { text: 'Message Element Definition', link: '/sement' }
-            ]
-        },
-        {
-            text: 'Others',
-            base: '/other',
-            collapsed: true,
-            items: [
-                { text: 'Security', link: '/security' },
-                { text: 'Contact', link: '/about' }
-            ]
-        },
+        /*        {
+                   text: 'Protocol',
+                   base: '/onebot',
+                   collapsed: true,
+                   items: [
+                       { text: 'Protocol Overview', link: '/index' },
+                       { text: 'Network Communication', link: '/network' },
+                       { text: 'Basic Event Structure', link: '/basic_event' },
+                       { text: 'Event Field Details', link: '/event' },
+                       { text: 'Basic API Interface', link: '/api' },
+                       { text: 'Message Element Definition', link: '/sement' }
+                   ]
+               },
+               {
+                   text: 'Others',
+                   base: '/other',
+                   collapsed: true,
+                   items: [
+                       { text: 'Security', link: '/security' },
+                       { text: 'Contact', link: '/about' }
+                   ]
+               }, */
     ]
 }
