@@ -70,11 +70,11 @@ export default {
       progress: number
     }>() as Plugin, {
       properties: {
-        'zh-CN': [
+        'en-US': [
           {
             key: 'wordCount',
             type: 'dynamic',
-            title: '字数',
+            title: 'Words',
             options: {
               type: 'wordsCount',
             },
@@ -82,18 +82,18 @@ export default {
           {
             key: 'readingTime',
             type: 'dynamic',
-            title: '阅读时间',
+            title: 'Reading Time',
             options: {
               type: 'readingTime',
-              dateFnsLocaleName: 'zhCN',
+              dateFnsLocaleName: 'enUS',
             },
           },
           {
             key: 'updatedAt',
             type: 'datetime',
-            title: '更新时间',
+            title: 'Updated at',
             formatAsFrom: true,
-            dateFnsLocaleName: 'zhCN',
+            dateFnsLocaleName: 'enUS',
           },
         ],
       },

@@ -18,6 +18,9 @@
     /* 兼容性 */
     color: transparent;
     /* 确保文本颜色透明 */
+
+    /* line-height: 1.5; */
+    padding-bottom: 5px;
 }
 
 .VPButton.brand {

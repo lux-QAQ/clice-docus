@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Quick Start
-      link: /guide/clice
+      link: /guide/start
     - theme: alt
       text: GitHub
       link: https://github.com/clice-project/clice

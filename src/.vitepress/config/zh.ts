@@ -43,7 +43,7 @@ export const zh = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: '快速开始',
+      text: 'quick start',
       link: '/guide/start-install',
       activeMatch: '/guide/'
     },
@@ -58,25 +58,25 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarGuide(): DefaultTheme.Sidebar {
   return [
     {
-      text: '快速开始',
+      text: 'Quick Start',
       base: '/guide',
       collapsed: true,
       items: [
-        { text: '目录导航', link: '/start-install' },
-        { text: '启动方式', link: '/install' },
+        { text: 'Menu', link: '/start' },// 可以考虑做一个导航页
+        { text: 'What is clice', link: '/clice' },
         {
-          text: '安装方式',
+          text: 'Install',
           base: '/guide/boot',
           collapsed: false,
           items: [
-            { text: 'Shell', link: '/Shell' },
-            { text: 'Framework', link: '/Framework' }
+            { text: 'build', link: '/build' },
+            { text: 'Install', link: '/install' }
           ]
         }
       ]
     },
     {
-      text: '配置',
+      text: 'Config',
       base: '/config',
       collapsed: true,
       items: [
